@@ -4,11 +4,23 @@ body {
     /* Add any styles you need for the body here */
 }
 
-.container {
+.header-container {
   display:flex;
   align-items: center;
-  justify-content: center;
-  gap: 5px
+  justify-content: space-between;
+  gap: 10px
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .icon {
@@ -26,21 +38,29 @@ body {
     object-fit: cover; /* Ensure the image covers the entire circle */
 }
 
+.header {
+    margin: 0;
+}
+
 /* Instructions */
 .instructions {
     margin: 1rem auto 0;
 }
 
   
-.ourstory{
+.whatrwe{
     width:100%;
     color: purple;
     text-align: center;
     top: 50%;
     position: absolute;
 }
-.ourstory h1{
+.whatrwe h1{
     font-weight: 100;
+    
 }
-
+.whatrwe p{
+    margin: 20px auto;
+    font-family: Arial,Helvetica,sans-serif;
+}
 
