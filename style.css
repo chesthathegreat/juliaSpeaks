@@ -1,19 +1,21 @@
-
-
 body {
-    /* Add any styles you need for the body here */
+    /* Add any styles you need for the body here 
+    margin: 0
+    padding: 0;
+    font-family: Arial, sans-serif;*/
+  background-color: 
 }
 
 .header-container {
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .left {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -28,8 +30,6 @@ body {
     height: 50px; /* Adjust the size as needed */
     border-radius: 50%;
     overflow: hidden;
-    display: block; /* Ensure it behaves like a block-level element */
-    margin: auto; /* Center the image */
 }
 
 .icon img {
@@ -42,9 +42,18 @@ body {
     margin: 0;
 }
 
-/* Instructions */
-.instructions {
-    margin: 1rem auto 0;
+h3 {
+    margin: 0;
+}
+
+{background-color: transparent;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+    color: #007bff;
 }
 
   
@@ -63,4 +72,7 @@ body {
     margin: 20px auto;
     font-family: Arial,Helvetica,sans-serif;
 }
-
+button {
+  background: transparent;
+  font-weight: bold;
+}
