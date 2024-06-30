@@ -52,6 +52,10 @@ h3 {
   margin: 0;
 }
 
+.header button {
+  margin: 0;
+}
+
 .button-styled {
   display: flex;
   gap: 20px;
