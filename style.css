@@ -1,11 +1,19 @@
 
 
 body {
-
+    /* Add any styles you need for the body here */
 }
+
+.container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px
+}
+
 .icon {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
     border-radius: 50%;
     overflow: hidden;
     display: block; /* Ensure it behaves like a block-level element */
@@ -20,24 +28,19 @@ body {
 
 /* Instructions */
 .instructions {
-  margin: 1rem auto 0;
+    margin: 1rem auto 0;
 }
 
-/* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
   
-  .ourstory{
-    
-  }
+.ourstory{
+    width:100%;
+    color: purple;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+}
+.ourstory h1{
+    font-weight: 100;
 }
 
 
