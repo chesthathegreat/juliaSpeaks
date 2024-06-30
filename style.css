@@ -6,11 +6,16 @@ body {
   background-color: #e6d7ff;
 }
 
-.bac
+.back {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0, 0.75), rgba(0,0,0,0.75));
+}
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #d3baff; /*placeholder*/
   padding: 10px;
 }
 
@@ -49,22 +54,20 @@ h3 {
 
 .button-styled {
   display: flex;
-  gap: 20px
+  gap: 20px;
 }
 
 .button-styled button {
   background: none;
   border: 2px solid transparent;
   border: none;
-  padding: 0;
+  padding: 10px;
   cursor: pointer;
   color: #000042; /*placeholder color*/
 }
 
-
-
 .button-styled button:hover {
-    color: #0080FF; /* Hover color */
+  color: #0080ff; /* Hover color */
 }
 
 /*.button-styled button h3 {
