@@ -1,26 +1,24 @@
 body {
-  /* Add any styles you need for the body here 
-    margin: 0
-    padding: 0;
-    font-family: Arial, sans-serif;*/
-  /*background-color: #466799;*/
+  font-family: Arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-image: url(https://cdn.glitch.global/adb0cdc2-f055-4341-bcea-b73f0c6f6ae6/_8e638ed9-9a67-4642-8388-5b4cfabb6796.jpg?v=1721008035077);
+  background-size: cover;
+  background-position: center;
 }
 
-.back {
-  width: 100%;
-  height: 100vh;
-  
-}
 .header-container {
   display: flex;
   align-items: center;
-  /*background-color: #466799;*/
   justify-content: space-between;
   padding: 10px;
   background-color: rgba(172, 189, 232, 0.75); /* semi-transparent background */
- 
+  z-index: 10;
 }
+
 .left {
   display: flex;
   align-items: center;
@@ -34,8 +32,8 @@ body {
 }
 
 .icon {
-  width: 50px; /* Adjust the size as needed */
-  height: 50px; /* Adjust the size as needed */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -43,7 +41,7 @@ body {
 .icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire circle */
+  object-fit: cover;
 }
 
 .header {
@@ -54,12 +52,11 @@ h3 {
   margin: 0;
 }
 
-
-
 .team-member {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .team-member img {
@@ -70,9 +67,14 @@ h3 {
   margin-right: 20px;
 }
 
+.team-member div {
+  text-align: left;
+}
+
 .team-member h3 {
   font-size: 1.2em;
   font-weight: bold;
+  margin: 0;
 }
 
 .team-member p {
@@ -86,44 +88,35 @@ h3 {
 
 .button-styled button {
   background: none;
-  border: 2px solid transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
-  color: #466799; /*placeholder color*/
+  color: #466799; /* Placeholder color */
 }
 
 .button-styled button:hover {
   color: #283d73; /* Hover color */
 }
 
-/*.button-styled button h3 {
-    margin: 0; /* Remove default margin for h3 */
-
 .whatrwe {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 80%;
   max-width: 1000px;
-  color: #283d73;
-  text-align: center;
-  padding: 100px;
+  padding: 20px;
   background-color: rgba(172, 189, 232, 0.75); /* semi-transparent background */
- 
+  text-align: center;
+  z-index: 200;
 }
 
-
-.whatrwe h1 {
+.whatrwe h2 {
   font-weight: 100;
+  margin-bottom: 20px;
 }
+
 .whatrwe p {
-  margin: 20px auto;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0;
 }
-/*button {
-  background: transparent;
-  font-weight: bold;
-}
-*/
