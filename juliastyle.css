@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6FA;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7B68EE;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.forum-list {
+    padding: 20px;
+}
+
+.forum-item {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.forum-item h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.forum-item p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.add-forum {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7B68EE;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content .tags input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.modal-content .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-content .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content .buttons button:hover {
+    background-color: #ccc;
+}
+
+.edit-forum {
+    padding: 20px;
+}
+
+.edit-forum h2 {
+    margin-top: 0;
+}
+
+.edit-forum textarea {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-forum .tags input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.edit-forum .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-forum .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-forum .buttons button:hover {
+    background-color: #ccc;
+}
+
+.edit-forum button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #7B68EE;
+    color: white;
+}
+
+.edit-forum button:hover {
+    background-color: #6A5ACD;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6A5ACD;
+    width: 97%;
+    padding: 10px 35px;
+    z-index: 10;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+      display: flex;
+      align-items: center;
+  }
+  
+  .icon img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+  }
+  
+  .header {
+    margin: 0;
+  }
+
+  .button-styled button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #466799;
+  }
+  
+  .button-styled button:hover {
+    color: #283d73; /* Hover color */
+  }

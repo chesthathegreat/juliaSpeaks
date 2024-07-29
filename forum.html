@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia's SPEECH</title>
+    <link rel="stylesheet" href="juliastyle.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="left">
+          <div class="icon">
+            <img
+              onclick="location.href='index.html'"
+              src="https://cdn.glitch.global/adb0cdc2-f055-4341-bcea-b73f0c6f6ae6/Subject.png?v=1721009088914"
+              title="icon"
+            />
+          </div>
+          <h1 class="header" onclick="location.href='index.html'">
+            Julia's SPEECH
+          </h1>
+        </div>
+        <div class="right">
+          <div class="button-styled">
+            <button onclick="location.href='Games.html'"><h3>Games</h3></button>
+            <button onclick="location.href='Lessons.html'">
+              <h3>Lessons</h3>
+            </button>
+            <button onclick="location.href='forum.html'">
+              <h3>Forum</h3>
+            </button>
+            <button onclick="location.href='About-us.html'">
+              <h3>About Us</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+    <div class="forum-list">
+        <div class="forum-item" onclick="openPost()">
+            <h2>Title of Forum</h2>
+            <p>Some description...</p>
+        </div>
+        <div class="forum-item" onclick="openPost()">
+            <h2>Title of Forum</h2>
+            <p>Some description...</p>
+        </div>
+        <div class="forum-item" onclick="openPost()">
+            <h2>Title of Forum</h2>
+            <p>Some description...</p>
+        </div>
+        <div class="forum-item" onclick="openPost()">
+            <h2>Title of Forum</h2>
+            <p>Some description...</p>
+        </div>
+    </div>
+    <div class="add-forum" onclick="openDraft()">
+        +
+    </div>
+
+    <div class="modal" id="draftModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDraft()">&times;</span>
+            <h2>Title of Forum</h2>
+            <textarea placeholder="Description..."></textarea>
+            <div class="tags">
+                <input type="text" placeholder="#tags">
+            </div>
+            <div class="buttons">
+                <button onclick="saveDraft()">Drafts</button>
+                <button onclick="publishPost()">Publish</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link the script here -->
+</body>
+</html>
